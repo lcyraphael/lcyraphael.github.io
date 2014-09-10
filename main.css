@@ -292,6 +292,52 @@ hr {
   background-repeat: no-repeat;
 }
  
+
+.erate {
+  background: url(erate.png) 0px 150px, url(erate.png) 0px -225px #f6d9ad; 
+  background-repeat: no-repeat;
+  -webkit-transition: background-position 0.3s ease;
+  -moz-transition: background-position 0.3s ease;
+  -o-transition: background-position 0.3s ease;
+  -ms-transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease;
+}
+ 
+.erate:hover {
+  background: url(erate.png) 0px 210px, url(erate.png) 0px -285px, #f6d9ad;
+  background-repeat: no-repeat;
+}
+
+.nn {
+  background: url(nn.png) 0px 150px, url(nn.png) 0px -225px #f6d9ad; 
+  background-repeat: no-repeat;
+  -webkit-transition: background-position 0.3s ease;
+  -moz-transition: background-position 0.3s ease;
+  -o-transition: background-position 0.3s ease;
+  -ms-transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease;
+}
+ 
+.nn:hover {
+  background: url(nn.png) 0px 210px, url(nn.png) 0px -285px, #f6d9ad;
+  background-repeat: no-repeat;
+}
+
+.pnut {
+  background: url(pnut.png) 0px 150px, url(pnut.png) 0px -225px #f6d9ad; 
+  background-repeat: no-repeat;
+  -webkit-transition: background-position 0.3s ease;
+  -moz-transition: background-position 0.3s ease;
+  -o-transition: background-position 0.3s ease;
+  -ms-transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease;
+}
+ 
+.pnut:hover {
+  background: url(pnut.png) 0px 210px, url(pnut.png) 0px -285px, #f6d9ad;
+  background-repeat: no-repeat;
+}
+
  /* not used; shamelessly ripped from design shack 
 .paper {
   background: url(paper.jpg) 0px 150px, url(paper.jpg) 0px -225px, #c9bfaa;
