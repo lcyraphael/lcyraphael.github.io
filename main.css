@@ -162,11 +162,11 @@ hr {
   margin: auto;
 
 
-  -webkit-transition: all 1s ease;
+/*  -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
-  transition: all 1s ease;
+  transition: all 1s ease;*/
 
 }
 
@@ -221,8 +221,9 @@ hr {
 
 .mah_name {
   margin-top: 15px;
-  font-size: 20px;
+  font-size: 15px;
   text-align:center;
+  float: relative;
 }
 
 .mah_name:hover {
@@ -375,6 +376,11 @@ hr {
   background-repeat: no-repeat;
 }
 
+#work .ls {
+  margin: 50px;
+  position: bottom;
+}
+
 
 #work .reveal p {
   text-align: center;
@@ -405,5 +411,3 @@ hr {
   opacity: 1;
   cursor: pointer;
 }
-
-
