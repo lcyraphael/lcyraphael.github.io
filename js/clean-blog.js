@@ -6,9 +6,41 @@
 
 // Contact Form Scripts
 
+$("#contactForm2").validator().on("submit", function (event) {
+    if (event.isDefaultPrevented()) {
+        // handle the invalid form...
+    } else {
+        // everything looks good!
+        event.preventDefault();
+        submitForm();
+    }
+});
+
+function submitForm(){
+    // Initiate Variables With Form Content
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+ 
+    $.ajax({
+        type: "POST",
+        url: "mail/contact_me2.php",
+        data: "name=" + name + "&email=" + email + "&message=" + message,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            }
+        }
+    });
+}
+
+function formSuccess(){
+    $( "#msgSubmit" ).removeClass( "hidden" );
+}
+
 $(function() {
 
-    $("#contactFrom input,#contactForm textarea").jqBootstrapValidation({
+    $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
             // additional error messages or events
