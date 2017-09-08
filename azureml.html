@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Machine Learning PDS Data and Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+
+</head>
+
+
+<body>
+
+    <script>
+        // If absolute URL from the remote server is provided, configure the CORS
+        // header on that server.
+        var url = 'https://lcyraphael.github,io/img/ML Pipeline (3).pdf';
+
+        // Disable workers to avoid yet another cross-origin issue (workers need
+        // the URL of the script to be loaded, and dynamically loading a cross-origin
+        // script does not work).
+        PDFJS.disableWorker = true;
+
+        // The workerSrc property shall be specified.
+        PDFJS.workerSrc = 'http://mozilla.github.io/pdf.js/build/pdf.worker.js';
+
+        // Asynchronous download of PDF
+        var loadingTask = PDFJS.getDocument(url);
+        loadingTask.promise.then(function (pdf) {
+            console.log('PDF loaded');
+
+            // Fetch the first page
+            var pageNumber = 1;
+            pdf.getPage(pageNumber).then(function (page) {
+                console.log('Page loaded');
+
+                var scale = 1.5;
+                var viewport = page.getViewport(scale);
+
+                // Prepare canvas using PDF page dimensions
+                var canvas = document.getElementById('the-canvas');
+                var context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                // Render PDF page into canvas context
+                var renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                var renderTask = page.render(renderContext);
+                renderTask.then(function () {
+                    console.log('Page rendered');
+                });
+            });
+        }, function (reason) {
+            // PDF loading error
+            console.error(reason);
+        });
+    </script>
+
+    <div class="page-header text-center">
+        <h1>Using AI to suggest document topics for Parliamentary metadata-indexers</h1>
+        <p>Here's an infrastructure diagram showing how to implement a machine learning and retraining pipeline with Microsoft
+            Azure Data Factory, Machine Learning Studio, and Storage.</p>
+    </div>
+    <!-- <div id="diagram"><img src="img/ML Pipeline (3).pdf"></div> -->
+    <canvas id="the-canvas"></canvas>
+     <a href="/web/viewer.html?file=%2Fyourpdf.pdf">Open yourpdf.pdf with PDF.js</a> 
+
+
+</body>
+
+</html>
