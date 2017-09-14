@@ -39,3 +39,7 @@ body{background-image: url('../img/whitey.png');background-size: cover;font-fami
       -ms-transform: rotate(20deg);
           transform: rotate(20deg);
 }
+
+.post-contents {
+  margin: 100px 50px 50px;
+}
