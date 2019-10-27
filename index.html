@@ -1,122 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Interested in software development, data science, and tech for good">
-    <meta name="author" content="Raphael Leung">
-    <link rel="icon" href="assets/favicon.ico">
-    <script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interested in software development, data science, and tech for good">
+  <meta name="author" content="Raphael Leung">
+  <link rel="icon" href="assets/favicon.ico">
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-              ga('create', 'UA-42686900-2', 'auto');
-              ga('send', 'pageview');
-    </script>
+    ga('create', 'UA-42686900-2', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-    <title>Raphael Leung</title>
+  <title>Raphael Leung</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
 
 
-<!-- The GLSL editor to create algorithmic background art was written by Peter Marks. MIT license, 2017. -->
-<!-- Reference https://art.spluko.com/aa -->
-  
-  </head>
-  
-  
-  <body>
+  <!-- The GLSL editor to create algorithmic background art was written by Peter Marks. MIT license, 2017. -->
+  <!-- Reference https://art.spluko.com/aa -->
 
-      <canvas id="c"></canvas>
+</head>
 
-      <div class="main-container">
-          
-          <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-              <div class="container-fluid">
-                  <div class="navbar-header page-scroll">
-                      <a class="navbar-brand" href="index.html">About Raphael</a>
-                      <a class="navbar-brand" href="blog.html">Blog</a>
-                  </div>
-              </div>
-          </nav>
+
+<body>
+
+  <canvas id="c"></canvas>
+
+  <div class="img-container">
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header page-scroll">
+          <a class="navbar-brand" href="index.html">About Raphael</a>
+          <a class="navbar-brand" href="blog.html">Blog</a>
+        </div>
       </div>
-      
-      <div id="ui">
-          <div id="errors"></div>
-          <textarea id="code" spellcheck="false"></textarea>
+    </nav>
+  </div>
+
+  <div id="ui">
+    <div id="errors"></div>
+    <textarea id="code" spellcheck="false"></textarea>
+  </div>
+
+  <div id="bio" class="jumbotron mainbio">
+    <div class="img-container">
+      <div class="headshot">
+        <img src="assets/raph.png" alt="raph">
       </div>
+    </div>
 
-      <div id="bio" class="jumbotron mainbio">
-          <div class="main-container">
-              <div class="headshot">
-                  <img src="assets/raph.png" alt="raph">
-              </div>
-          </div>
-
-          <div class="container">
-              <div class="justify-content-center center-block mainbio">
-                  <p>Data science fellow at <a href="https://www.nesta.org.uk" target="blank">Nesta</a>.
-                    Previously a C# developer for the <a href="https://pds.blog.parliament.uk/" target="blank">
-                    UK Parliament</a> and various roles at the <a href="http://behaviouralinsights.co.uk"
-                    target="blank">Behavioural Insights Team</a>, <a href="https://law.yale.edu/isp" target="_blank">
-                    Information Society Project</a>, and <a href="https://www.benton.org" target="_blank">
-                    Benton Foundation</a>. I have a bachelor's from Yale and a master's from Oxford.
-                    I am interested in software development and data science.</p>
-              </div>
-          </div>
-
-          <div class="container">
-              <div class="row footer-icons">
-                  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                      <ul class="list-inline text-center">
-                          <li>
-                              <a href="https://www.linkedin.com/in/raphael-leung-635b9232">
-                                  <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x"></i>
-                                      <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                  </span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="https://www.github.com/lcyraphael">
-                                  <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x"></i>
-                                      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                  </span>
-                              </a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-
+    <section class="container">
+      <div class="mainbio">
+        <p>Data science fellow at <a href="https://www.nesta.org.uk" target="blank">Nesta</a>.
+          Previously a C# developer for the <a href="https://pds.blog.parliament.uk/" target="blank">
+            UK Parliament</a> and various roles at the <a href="http://behaviouralinsights.co.uk"
+            target="blank">Behavioural Insights Team</a>, <a href="https://law.yale.edu/isp" target="_blank">
+            Information Society Project</a>, and <a href="https://www.benton.org" target="_blank">
+            Benton Foundation</a>. I have a bachelor's from Yale and a master's from Oxford.
+          I am interested in software development and data science.</p>
       </div>
-      
+    </section>
+
+
+
+    <div class="container">
+      <div class="row footer-icons">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <ul class="list-inline text-center">
+            <li>
+              <a href="https://www.linkedin.com/in/raphael-leung-635b9232">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.github.com/lcyraphael">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </div>
 
-      <div class="space"></div>
+  </div>
 
-    <script src="js/app.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script id="vs" type="x-shader/x-vertex">
+  <div class="space"></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script id="vs" type="x-shader/x-vertex">
       attribute vec4 position;
 
       void main() {
         gl_Position = position;
       }
     </script>
-    <script id="fs" type="x-shader/x-fragment">precision mediump float;
+  <script id="fs" type="x-shader/x-fragment">precision mediump float;
 uniform float time;
 uniform vec2 resolution;
 
@@ -134,111 +139,111 @@ void main(void) {
 }
 
 </script>
-    <script language="javascript" src="js/twgl.min.js"></script>
-    <script language="javascript" src="js/lz-string.min.js"></script>
-    <script>
-      "use strict";
-      
-      var canvas = document.getElementById("c");
-      var gl = twgl.getWebGLContext(canvas);
-      var ui = document.getElementById("ui");
-      var code = document.getElementById("code");
-      var errors = document.getElementById("errors");
-      var selStart = 0;
-      var selEnd = 0;
-      var programInfo;
-      var bufferInfo;
-      var timer;
+  <script language="javascript" src="js/twgl.min.js"></script>
+  <script language="javascript" src="js/lz-string.min.js"></script>
+  <script>
+    "use strict";
 
-      function compileError(e) {
-        errors.innerText = e.split("*** Error compiling shader: ")[1].slice(0,-2);
+    var canvas = document.getElementById("c");
+    var gl = twgl.getWebGLContext(canvas);
+    var ui = document.getElementById("ui");
+    var code = document.getElementById("code");
+    var errors = document.getElementById("errors");
+    var selStart = 0;
+    var selEnd = 0;
+    var programInfo;
+    var bufferInfo;
+    var timer;
+
+    function compileError(e) {
+      errors.innerText = e.split("*** Error compiling shader: ")[1].slice(0, -2);
+    }
+
+    function init() {
+
+      var pi = twgl.createProgramInfo(gl, ["vs", code.value], compileError);
+
+      if (!pi) {
+        return false;
       }
 
-      function init() {
+      errors.innerText = "";
+      programInfo = pi;
+      var arrays = {
+        position: [-1, -1, 0, 1, -1, 0, -1, 1, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0],
+      };
+      bufferInfo = twgl.createBufferInfoFromArrays(gl, arrays);
+      gl.useProgram(programInfo.program);
+      twgl.setBuffersAndAttributes(gl, programInfo, bufferInfo);
+      resize();
+      return true;
+    }
 
-        var pi = twgl.createProgramInfo(gl, ["vs", code.value], compileError);
+    function resize() {
+      twgl.resizeCanvasToDisplaySize(gl.canvas);
+      gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
+      twgl.setUniforms(programInfo, { resolution: [gl.canvas.width, gl.canvas.height] });
+    }
 
-        if (!pi) {
-          return false;
-        }
-        
-        errors.innerText = "";
-        programInfo = pi;
-        var arrays = {
-          position: [-1, -1, 0, 1, -1, 0, -1, 1, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0],
-        };
-        bufferInfo = twgl.createBufferInfoFromArrays(gl, arrays);
-        gl.useProgram(programInfo.program);
-        twgl.setBuffersAndAttributes(gl, programInfo, bufferInfo);
-        resize();
-        return true;
-      }
+    function render(time) {
+      twgl.setUniforms(programInfo, { time: time * 0.001 });
+      twgl.drawBufferInfo(gl, bufferInfo);
 
-      function resize() {
-        twgl.resizeCanvasToDisplaySize(gl.canvas);
-        gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
-        twgl.setUniforms(programInfo, {resolution: [gl.canvas.width, gl.canvas.height]});
-      }
-
-      function render(time) {
-        twgl.setUniforms(programInfo, {time: time * 0.001});
-        twgl.drawBufferInfo(gl, bufferInfo);
-
-        requestAnimationFrame(render);
-      }
-
-      function updateShader() {
-        if (init()) {
-          onhashchange = () => {onhashchange = navigate;}; // this is a scripted change
-          location.hash = LZString.compressToEncodedURIComponent(code.value);
-        }
-      }
-
-      function update() {
-        clearTimeout(timer);
-        timer = setTimeout(updateShader, 500);
-      }
-
-      function navigate() {
-        if (location.hash) {
-          code.value = LZString.decompressFromEncodedURIComponent(location.hash.slice(1));
-        } else {
-          code.value = document.getElementById("fs").text;
-        }
-        init();
-      }
-
-      function tab(shiftKey) {
-        document.execCommand("insertText", false, "  ");
-      }
-
-      function toggleUI() {
-        code.setAttribute("disabled", true)
-        ui.classList.toggle("hidden");
-          if (code.hasAttribute("disabled")) {
-            code.removeAttribute("disabled");
-            code.focus();
-            code.setSelectionRange(selStart, selEnd);
-          } else {
-            if (code.selectionStart) {
-              selStart = code.selectionStart;
-              selEnd = code.selectionEnd;
-            } else {
-              selStart = 0;
-              selEnd = 0;
-            }
-            code.setAttribute("disabled", true);
-          }
-      }
-
-      toggleUI()
-      onresize = resize;
-      code.oninput = update;
-      code.onkeydown = (e) => {if(e.keyCode == 9) {e.preventDefault(); tab(e.shiftKey);}};
-      onkeydown = (e) => {if(e.keyCode == 27) toggleUI();};
-      navigate();
       requestAnimationFrame(render);
-    </script>
-  </body>
+    }
+
+    function updateShader() {
+      if (init()) {
+        onhashchange = () => { onhashchange = navigate; }; // this is a scripted change
+        location.hash = LZString.compressToEncodedURIComponent(code.value);
+      }
+    }
+
+    function update() {
+      clearTimeout(timer);
+      timer = setTimeout(updateShader, 500);
+    }
+
+    function navigate() {
+      if (location.hash) {
+        code.value = LZString.decompressFromEncodedURIComponent(location.hash.slice(1));
+      } else {
+        code.value = document.getElementById("fs").text;
+      }
+      init();
+    }
+
+    function tab(shiftKey) {
+      document.execCommand("insertText", false, "  ");
+    }
+
+    function toggleUI() {
+      code.setAttribute("disabled", true)
+      ui.classList.toggle("hidden");
+      if (code.hasAttribute("disabled")) {
+        code.removeAttribute("disabled");
+        code.focus();
+        code.setSelectionRange(selStart, selEnd);
+      } else {
+        if (code.selectionStart) {
+          selStart = code.selectionStart;
+          selEnd = code.selectionEnd;
+        } else {
+          selStart = 0;
+          selEnd = 0;
+        }
+        code.setAttribute("disabled", true);
+      }
+    }
+
+    toggleUI()
+    onresize = resize;
+    code.oninput = update;
+    code.onkeydown = (e) => { if (e.keyCode == 9) { e.preventDefault(); tab(e.shiftKey); } };
+    onkeydown = (e) => { if (e.keyCode == 27) toggleUI(); };
+    navigate();
+    requestAnimationFrame(render);
+  </script>
+</body>
 
 </html>

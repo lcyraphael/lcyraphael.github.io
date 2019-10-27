@@ -40,21 +40,17 @@ body{background-size: cover;font-family:'Times New Roman',serif;font-size:20px;c
           transform: rotate(20deg);
 }
 
-.post-contents {
-  margin: 100px 50px 50px;
-}
-
 .jumbotron p{
   font-weight: 500;
 }
 
 .mainbio {
-  font-family: 'Consolas','Courier New',monospace; 
+  font-family: 'Consolas','Lucida Console',monospace; 
   color: #5bacbd;
   margin: 2%;
 }
 
-.main-container {
+.img-container {
   margin-top: 5%;
 }
 
@@ -132,7 +128,7 @@ textarea {
   overflow: scroll;
 }
 #bio {
-  width: 75%;
+  width: 85%;
   height: 70%;
   position: absolute;
   top: 0;
@@ -141,8 +137,8 @@ textarea {
   right: 0;
   z-index: 1;
   margin: auto;
-  padding: 2%;
-  background-color: rgba(20,20,20,0.5);
+  padding: 1%;
+  background-color: rgba(20,20,20,0.25);
   /* color: #bbbbbb; */
   display: flex;
   flex-flow: column;
@@ -184,12 +180,13 @@ textarea {
 }
 /* social media icons */
 .footer-icons{
-  margin-bottom: 25%;
+  /* margin-bottom: 0; */
   position: relative;
 }
-/* responsiveness font for phone screens */
+/* media query - responsiveness font for phone screens */
 @media screen and (max-width: 600px) {
 .jumbotron p {
   font-size: 3.7vw;
+  margin: 0;
 }
 }
