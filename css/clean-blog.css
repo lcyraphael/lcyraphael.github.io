@@ -5,6 +5,7 @@
  */
 
 body {
+  background-image: url('../assets/whitey.png');background-size: cover;
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
   color: #404040;
@@ -23,7 +24,12 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-weight: 700;
+}
+h3 {
+  font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight:200;
+  color:gray
 }
 a {
   color: #404040;
@@ -38,7 +44,8 @@ a img:focus {
 }
 blockquote {
   color: #808080;
-  font-style: italic;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 200;
 }
 hr.small {
   max-width: 100px;
@@ -47,6 +54,7 @@ hr.small {
   border-color: white;
 }
 .navbar-custom {
+  text-transform:uppercase;
   position: absolute;
   top: 0;
   left: 0;
@@ -55,11 +63,11 @@ hr.small {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .navbar-custom .navbar-brand {
-  font-weight: 800;
+  font-weight: 700;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -146,7 +154,8 @@ hr.small {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
-  color: white;
+  color:#fff;text-shadow: #000 0px 0px 2px;-webkit-font-smoothing: antialiased;
+  /* color: white; */
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -211,7 +220,8 @@ hr.small {
   }
 }
 .post-preview > a {
-  color: #404040;
+  color: #404040; 
+  /* #404040; */
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
@@ -276,6 +286,7 @@ footer .copyright {
   margin-bottom: 0;
 }
 .floating-label-form-group {
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   font-size: 14px;
   position: relative;
   margin-bottom: 0;
